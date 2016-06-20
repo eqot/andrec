@@ -15,10 +15,6 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "andrec"
 	app.Usage = "screen recorder for Android"
-	app.Action = func(c *cli.Context) error {
-		fmt.Println("boom! I say!")
-		return nil
-	}
 
 	app.Action = func(c *cli.Context) error {
 		if c.NArg() == 0 {
