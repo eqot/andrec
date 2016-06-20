@@ -21,11 +21,11 @@ func main() {
 	}
 
 	app.Action = func(c *cli.Context) error {
-		filename := "Nefertiti"
-		if c.NArg() > 0 {
-			filename = c.Args().Get(0)
+		if c.NArg() == 0 {
+			log.Fatal("output file not found")
 		}
 
+		filename := c.Args().Get(0)
 		record(filename)
 
 		return nil
