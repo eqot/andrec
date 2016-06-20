@@ -15,6 +15,8 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "andrec"
 	app.Usage = "screen recorder for Android"
+	app.UsageText = app.Name + " [global options] filename"
+	app.Version = "v0.1.0"
 
 	app.Action = func(c *cli.Context) error {
 		if c.NArg() == 0 {
