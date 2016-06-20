@@ -1,12 +1,12 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io"
 	"log"
 	"os"
 	"os/exec"
-	"time"
 
 	"gopkg.in/urfave/cli.v2"
 )
@@ -50,8 +50,9 @@ func record(filename string) {
 	}
 
 	fmt.Println("Recording screen to", filename)
+	fmt.Println("Press enter key to stop recording")
 
-	time.Sleep(time.Second * 3)
+	bufio.NewReader(os.Stdin).ReadBytes('\n')
 
 	c1.Process.Kill()
 	w.Close()
