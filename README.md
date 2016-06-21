@@ -4,9 +4,9 @@ This is a cross-platform command line tool to record screen of Android device.
 
 Here are advantages over
 [the typical way](https://developer.android.com/studio/command-line/shell.html#screenrecord)
- by running ```adb shell screenrecord```.
+ with ```adb shell screenrecord```.
 
-* **Powerful** - thanks to [FFmpeg](https://ffmpeg.org/), recorded movie can be converted into arbitrary format like animated GIF
+* **Convenient** - thanks to [FFmpeg](https://ffmpeg.org/), recorded file can be converted into arbitrary format like animated GIF
 * **Simple** - all required tasks are automatically executed, such as recording screen, downloading file from Android to PC and converting file
 * **Fast** - all tasks are executed in parallel
 
@@ -18,7 +18,9 @@ Here are advantages over
 
 ## Install
 
-TBD
+```
+curl -L git.io/cli | L=eqot/andrec sh
+```
 
 
 ## How to use
