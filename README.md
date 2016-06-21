@@ -6,8 +6,8 @@ Here are advantages over
 [the typical way](https://developer.android.com/studio/command-line/shell.html#screenrecord)
  with ```adb shell screenrecord```.
 
-* **Convenient** - thanks to [FFmpeg](https://ffmpeg.org/), recorded file can be converted into arbitrary format like animated GIF
 * **Simple** - all required tasks are automatically executed, such as recording screen, downloading file from Android to PC and converting file
+* **Convenient** - thanks to [FFmpeg](https://ffmpeg.org/), recorded file can be converted into arbitrary format like animated GIF
 * **Fast** - all tasks are executed in parallel
 
 ## Prerequisites
