@@ -19,7 +19,7 @@ Here are advantages over
 ## Install
 
 ```
-curl -L git.io/cli | L=eqot/andrec sh
+curl -L git.io/cli | L=eqot/andrec bash
 ```
 
 
